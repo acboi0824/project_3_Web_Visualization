@@ -14,16 +14,25 @@ Need help finding a pet? It's meow or never!
 Finfing a furry friend can be difficult; you may need a pet that gets along well with children or other animals or is small– the list goes on. Our team understands when you have a large pool to choose from, decision-making can be hard. Thanks to [PetFinder's public access API](https://www.petfinder.com/developers/v2/docs/), our team created a randomizer tool to help you find a furry friend that meets your needs, but does not overwhelm you with the burden of looking through thousands of potential pets. 
 
 
+
 How Did We Build this Tool?
 ----------------------------
-|Coding Languages:| JavaScript, Jupyter Notebook (Python), & HTML|
-|Visualization Tools/Packages: |Plotly & Leaflet|
-|Data Format(s):| API|
+| Tool Type |  Tool Packages/Software | 
+|------------|---|
+|Coding:| JavaScript, Jupyter Notebook (Python), & HTML|
+|Visualization: |Plotly & Leaflet|
+|Data Formats:| API & Panda DF|
+
+
 
 About the Folders:
 ----------------------------
 Each team member/contributor has their own folder containg their own repective visualizations, code, and images. The workload was primarily split into two groups: the ETL group (Kyndall & Sun) and the Web/Visuals group (Cathy & Alejandro); however, it is essential to state all members collaborated as needed and fufilled varying coding responsibilities. 
 
+
+
+| Folder |  Content | 
+|------------|---|
 |Kyndall:| Jupyter Notebook (Python), ReadMe images, & JS|
 |Sun: |Jupyter Notebook (Python), & JS|
 |Cathy:| JavaScript, CSS, & HTML |
