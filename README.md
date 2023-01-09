@@ -17,6 +17,11 @@ Finfing a furry friend can be difficult; you may need a pet that gets along well
 
 How Did We Build this Tool?
 ----------------------------
+
+<p align="center">
+<img width="500" src="https://www.zdnet.com/a/img/resize/a0dcec40a8cd8d2e1b3a9e12a05c2819622d20be/2021/07/19/8a337c80-5ed6-43a1-98fb-b981d420890f/programming-languages-shutterstock-1680857539.jpg?auto=webp&fit=crop&height=1200&width=1200" alt="coding imagery">
+</p>
+
 | Tool Type |  Tool Packages/Software | 
 |------------|---|
 |Coding:| JavaScript, Jupyter Notebook (Python), & HTML|
@@ -27,13 +32,15 @@ How Did We Build this Tool?
 
 About the Folders:
 ----------------------------
-Each team member/contributor has their own folder containg their own repective visualizations, code, and images. The workload was primarily split into two groups: the ETL group (Kyndall & Sun) and the Web/Visuals group (Cathy & Alejandro); however, it is essential to state all members collaborated as needed and fufilled varying coding responsibilities. 
+Each team member/contributor has their own folder containg their own repective visualizations, code, and images. The workload was split however, it is essential to state all members collaborated as needed and fufilled varying coding responsibilities. 
 
-
+• Sun: Data Extraction & Transformation
+• Kyndall: Data Extraction & Loading
+• Cathy & Alex: Website Coding & Design
 
 | Folder |  Content | 
 |------------|---|
-|Kyndall:| Jupyter Notebook (Python), ReadMe images, & JS|
+|Kyndall:| Jupyter Notebook (Python), SQL script, & JavaScript|
 |Sun: |Jupyter Notebook (Python), & JS|
 |Cathy:| JavaScript, CSS, & HTML |
 |Alejandro:| JavaScript, CSS, & HTML |
