@@ -19,16 +19,15 @@ How Did We Build this Tool?
 ----------------------------
 
 <p align="center">
-<img width="500" src="[https://www.zdnet.com/a/img/resize/a0dcec40a8cd8d2e1b3a9e12a05c2819622d20be/2021/07/19/8a337c80-5ed6-43a1-98fb-b981d420890f/programming-languages-shutterstock-1680857539.jpg?auto=webp&fit=crop&height=1200&width=1200](https://www.springboard.com/blog/wp-content/uploads/2022/09/programmng-language.jpg)" alt="coding imagery">
+<img width="500" src="https://www.springboard.com/blog/wp-content/uploads/2022/09/programmng-language.jpg" alt="coding imagery">
 </p>
 
-<center>
 | Tool Type |  Tool Packages/Software | 
 |------------|---|
 |Coding:| JavaScript, Jupyter Notebook (Python), & HTML|
 |Visualization: |Plotly & Leaflet|
 |Data Formats:| API & Panda DF|
-</center>
+
 
 
 About the Folders:
