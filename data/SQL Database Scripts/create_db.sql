@@ -8,11 +8,15 @@ CREATE DATABASE petfriends
     TABLESPACE = pg_default
     CONNECTION LIMIT = -1
     IS_TEMPLATE = False;
+    
+drop table if exists adoptees;
 CREATE TABLE public.adoptees (
     id bigint,
     url text,
     age text,
     gender text,
+    type text,
+    species text,
     name text,
     description text,
     status text,

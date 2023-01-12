@@ -5,18 +5,18 @@ import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, func
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template, redirect
 
 ###################################
 # Database Setup
-engine = create_engine("sqlite:///Resources/hawaii.sqlite")
+engine = create_engine("postgresql://postgres:2022@localhost/petfriends")
 
 # Reflect an hawaii database and tables
 Base = automap_base()
 Base.prepare(engine, reflect=True)
 
 # Save reference of the tables
-adoptees = Base.classes.adoptees
+# adoptees = Base.classes.adoptees
 # index_table does exist for other data
 
 ################################
@@ -39,12 +39,12 @@ def home():
 
 ######################################################
 
-@app.route('Velocity')
-@app.route('Leaflet')
-@app.route('Breeds')
-@app.route('Histogram')
-@app.route('Time to Adopt')
-@app.route('Im Feelin Lucky')
+# @app.route('Velocity')
+# @app.route('Leaflet')
+# @app.route('Breeds')
+# @app.route('Histogram')
+# @app.route('Time to Adopt')
+# @app.route('Im Feelin Lucky')
 
 
 ##########################################################
