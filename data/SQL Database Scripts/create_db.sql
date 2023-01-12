@@ -34,7 +34,10 @@ CREATE TABLE public.adoptees (
     small_photo text,
     medium_photo text,
     large_photo text,
-    breed text
+    breed text,
+    state_name text,
+    coordinates varchar
+    
 );
 CREATE INDEX friends ON 
     adoptees ("age","gender","name","city","state","breed");
