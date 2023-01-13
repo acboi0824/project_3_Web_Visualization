@@ -24,7 +24,7 @@
   <div id="map"></div>
 
   <!-- Passing variables from Flask to Javascript -->
-  <script type="text/javascript" {{ url_for('templates', filename='leaflet.js')}}></script>
+  <script type="text/javascript" {{ url_for('static', filename='leaflet.js')}}></script>
   <script type="text/javascript">
       myVar = myFunc({{data|tojson}})
   </script>
