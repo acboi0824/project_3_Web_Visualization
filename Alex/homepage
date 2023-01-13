@@ -1,4 +1,1005 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
-      <body><div class="v3_10"><div class="v3_11"></div><div class="v3_12"></div><div class="v3_13"></div><div class="v3_14"></div><div class="v3_15"></div><div class="v3_16"></div><div class="v3_17"></div><div class="v3_18"><div class="v3_19"><div class="v3_20"></div><div class="v3_21"></div><div class="v3_22"></div></div></div><div class="v3_23"></div><div class="v3_24"></div><div class="v3_25"></div><div class="v3_26"><div class="v3_27"></div><div class="v3_28"></div></div><div class="v3_29"></div><div class="v3_30"></div><div class="v3_31"><div class="v3_32"></div><div class="v3_33"></div></div><div class="v3_34"></div><div class="v3_35"><div class="v3_36"></div><div class="v3_37"></div></div><div class="v3_38"></div><div class="v3_39"></div><div class="v3_40"><div class="v3_41"></div><div class="v3_42"></div></div><div class="v3_43"></div><div class="v3_44"></div><div class="v3_45"><div class="v3_46"></div><div class="v3_47"></div></div><div class="v3_48"></div><div class="v3_49"></div><div class="v3_50"><div class="v3_51"></div><div class="v3_52"></div></div><div class="v3_53"></div><div class="v3_54"></div><div class="v3_55"><div class="v3_56"></div><div class="v3_57"></div></div><div class="v3_58"></div><div class="v3_59"></div><div class="v3_60"><div class="v3_61"></div><div class="v3_62"></div></div><div class="v3_63"></div><div class="v3_64"></div><div class="v3_65"><div class="v3_66"></div><div class="v3_67"></div></div><div class="v3_68"></div><div class="v3_69"></div><div class="v3_70"><div class="v3_71"></div><div class="v3_72"></div></div><div class="v3_73"></div><div class="v3_74"></div><div class="v3_75"></div><div class="v3_76"></div><div class="v3_77"><div class="v3_78"></div></div><span class="v3_79">Skip to main content</span><span class="v3_80">Skip to navigation</span><span class="v3_81">Happy Tails - Group 5</span><span class="v3_82">Happy Tails - Petfinder Stats</span><span class="v3_83">A tool to visualize pet adoption trends in the Petfinder API</span><span class="v3_84">Mission of the Project</span><span class="v3_85">Access the Petfinder API and store relevant data in a database</span><span class="v3_86">Pull in only data that we need in the ETL process</span><span class="v3_87">Interactive v</span><span class="v3_88">isualizations of the relevant data</span><span class="v3_89">Petfinder "I'm feeling lucky feature" 🎲</span><span class="v3_90">Visualizations</span><span class="v3_91">Count</span><span class="v3_92">Count shows the number of adoptable and adopted pets by region</span><span class="v3_93">Time to Adopt</span><span class="v3_94">Time to adopt shows the velocity of pets by region</span><span class="v3_95">Histogram</span><span class="v3_96">What should our histogram examine?</span><span class="v3_97">Breeds</span><span class="v3_98">Count of most adopted breed by region and highest velocity breed by region</span><span class="v3_99">Leaflet</span><span class="v3_100">Heatmap of adopted or adoptable pets by region</span><span class="v3_101">Im Feelin Lucky 🎲</span><span class="v3_102">Input your current region to get a pet adoption suggestion</span><span class="v3_103">Github</span><span class="v3_104">Made with</span><span class="v3_105">❤️</span><span class="v3_106">by Group 5: Happy Tails</span></div></body></html> <br/><br/>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!--Creating Container-->
+  <div class="v3_10">
+    <!--Creating nav-->
+    <div class="v3_11"></div>
+    <div class="v3_12"></div>
+    <div class="v3_13"></div>
+    <div class="v3_14"></div>
+    <div class="v3_15"></div>
+    <div class="v3_16"></div>
+    <div class="v3_17"></div>
+    <div class="v3_18">
+      <div class="v3_19">
+        <div class="v3_20"></div>
+        <div class="v3_21"></div>
+        <div class="v3_22"></div>
+      </div>
+    </div>
+    <div class="v3_23"></div>
+    <div class="v3_24"></div>
+    <div class="v3_25"></div>
+    <div class="v3_26">
+      <div class="v3_27"></div>
+      <div class="v3_28"></div>
+    </div>
+    <div class="v3_29"></div>
+    <div class="v3_30"></div>
+    <div class="v3_34"></div>
+    <div class="v3_35">
+      <div class="v3_36"></div>
+      <div class="v3_37"></div>
+    </div>
+    <!--Creating columns-->
+    <div class="v3_38"></div>
+    <div class="v3_39"></div>
+    <div class="v3_43"></div>
+    <div class="v3_44"></div>
+    <div class="v3_48"></div>
+    <div class="v3_49"></div>
+    <div class="v3_53"></div>
+    <div class="v3_54"></div>
+    <div class="v3_58"></div>
+    <div class="v3_59"></div>
+    <div class="v3_63"></div>
+    <div class="v3_64"></div>
+    <div class="v3_68"></div>
+    <div class="v3_69"></div>
+    <div class="v3_73"></div>
+    <div class="v3_74"></div>
+    <div class="v3_75"></div>
+    <div class="v3_76"></div>
+    <!--Creating text-->
+    <span class="v3_81">Happy Tails - Group 5</span>
+    <span class="v3_82">Happy Tails - Petfinder Stats</span>
+    <span class="v3_83">A tool to visualize pet adoption trends in the Petfinder API</span>
+    <span class="v3_84">Mission of the Project</span>
+    <span class="v3_85">Access the Petfinder API and store relevant data in a database</span>
+    <span class="v3_86">Pull in only data that we need in the ETL process</span><span class="v3_87">Interactive v</span>
+    <span class="v3_88">isualizations of the relevant data</span>
+    <span class="v3_89">Petfinder "I'm feeling lucky feature" 🎲</span>
+    <span class="v3_90">Visualizations</span>
+    <span class="v3_91">Count</span>
+    <span class="v3_92">Count shows the number of adoptable and adopted pets by region</span>
+    <span class="v3_93">Time to Adopt</span><span class="v3_94">Time to adopt shows the velocity of pets by region</span>
+    <span class="v3_95">Histogram</span>
+    <span class="v3_96">What should our histogram examine?</span>
+    <span class="v3_97">Breeds</span>
+    <span class="v3_98">Count of most adopted breed by region and highest velocity breed by region</span>
+    <span class="v3_99">Leaflet</span><span class="v3_100">Heatmap of adopted or adoptable pets by region</span>
+    <span class="v3_101">Im Feelin Lucky 🎲</span><span class="v3_102">Input your current region to get a pet adoption suggestion</span><span class="v3_103">Github</span><span class="v3_104">Made with</span>
+    <span class="v3_105">❤️</span><span class="v3_106">by Group 5: Happy Tails</span>
+  </div>
+</body>
+
+</html> <br /><br />
+<!--Creating css-->
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  .v3_10 {
+    width: 100%;
+    height: 2713px;
+    background: rgba(255, 255, 255, 1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+
+  .v3_11 {
+    width: 100%;
+    height: 800px;
+    background: rgba(238, 238, 238, 1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+
+  .v3_12 {
+    width: 516px;
+    height: 64px;
+    background: rgba(32, 33, 36, 0.75);
+    opacity: 1;
+    position: absolute;
+    top: 5px;
+    left: 342px;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    overflow: hidden;
+  }
+
+  .v3_13 {
+    width: 508px;
+    height: 61px;
+    background: url("../images/v3_13.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    overflow: hidden;
+  }
+
+  .v3_14 {
+    width: 158px;
+    height: 48px;
+    background: url("../images/v3_14.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 13px;
+    left: 350px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    overflow: hidden;
+  }
+
+  .v3_15 {
+    width: 850px;
+    height: 61px;
+    background: url("../images/v3_15.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    overflow: hidden;
+  }
+
+  .v3_16 {
+    width: 141px;
+    height: 48px;
+    background: url("../images/v3_16.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 13px;
+    left: 709px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    overflow: hidden;
+  }
+
+  .v3_17 {
+    width: 100%;
+    height: 800px;
+    background: rgba(255, 255, 255, 1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+
+  .v3_18 {
+    width: 24px;
+    height: 24px;
+    background: rgba(255, 255, 255, 1);
+    opacity: 1;
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    overflow: hidden;
+  }
+
+  .v3_19 {
+    width: 18px;
+    height: 10px;
+    background: url("../images/v3_19.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 7px;
+    left: 3px;
+    overflow: hidden;
+  }
+
+  .v3_20 {
+    width: 18px;
+    background: url("../images/v3_20.png");
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 2px solid rgba(0, 0, 0, 1);
+  }
+
+  .v3_21 {
+    width: 18px;
+    background: url("../images/v3_21.png");
+    opacity: 1;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    border: 2px solid rgba(0, 0, 0, 1);
+  }
+
+  .v3_22 {
+    width: 18px;
+    background: url("../images/v3_22.png");
+    opacity: 1;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    border: 2px solid rgba(0, 0, 0, 1);
+  }
+
+  .v3_23 {
+    width: 62px;
+    height: 56px;
+    background: url("../images/v3_23.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 36px;
+    overflow: hidden;
+  }
+
+  .v3_24 {
+    width: 100%;
+    height: 56px;
+    background: rgba(33, 33, 33, 1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+
+  .v3_25 {
+    width: 48px;
+    height: 36px;
+    background: url("../images/v3_25.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 4px;
+    left: 1152px;
+    overflow: hidden;
+  }
+
+  .v3_26 {
+    width: 24px;
+    height: 24px;
+    background: rgba(255, 255, 255, 1);
+    opacity: 1;
+    position: absolute;
+    top: 16px;
+    left: 1164px;
+    overflow: hidden;
+  }
+
+  .v3_27 {
+    width: 17px;
+    height: 17px;
+    background: rgba(0, 0, 0, 1);
+    opacity: 1;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+  }
+
+  .v3_28 {
+    width: 24px;
+    height: 24px;
+    background: url("../images/v3_28.png");
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+
+  .v3_29 {
+    width: 100%;
+    height: 520px;
+    background: rgba(66, 20, 95, 1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+
+  .v3_30 {
+    width: 28px;
+    height: 28px;
+    background: url("../images/v3_30.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 565px;
+    left: 817px;
+    overflow: hidden;
+  }
+
+  .v3_34 {
+    width: 52px;
+    height: 52px;
+    background: rgba(147, 147, 147, 0.699999988079071);
+    opacity: 1;
+    position: absolute;
+    top: 832px;
+    left: 1074px;
+    overflow: hidden;
+  }
+
+  .v3_35 {
+    width: 18px;
+    height: 18px;
+    background: rgba(255, 255, 255, 1);
+    opacity: 1;
+    position: absolute;
+    top: 849px;
+    left: 1091px;
+    overflow: hidden;
+  }
+
+  .v3_36 {
+    width: 18px;
+    height: 18px;
+    background: url("../images/v3_36.png");
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+
+  .v3_37 {
+    width: 13px;
+    height: 13px;
+    background: rgba(0, 0, 0, 1);
+    opacity: 1;
+    position: absolute;
+    top: 2px;
+    left: 3px;
+  }
+
+  .v3_38 {
+    width: 100%;
+    height: 457px;
+    background: url("../images/v3_38.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 832px;
+    left: 62px;
+    border: 1px solid rgba(224, 224, 224, 1);
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    overflow: hidden;
+  }
+
+  .v3_39 {
+    width: 28px;
+    height: 28px;
+    background: url("../images/v3_39.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 1358px;
+    left: 744px;
+    overflow: hidden;
+  }
+
+  .v3_43 {
+    width: 248px;
+    height: 321px;
+    background: url("../images/v3_43.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 1455px;
+    left: 62px;
+    overflow: hidden;
+  }
+
+  .v3_44 {
+    width: 28px;
+    height: 28px;
+    background: url("../images/v3_44.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 1468px;
+    left: 405px;
+    overflow: hidden;
+  }
+
+  .v3_48 {
+    width: 248px;
+    height: 319px;
+    background: url("../images/v3_48.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 1455px;
+    left: 614px;
+    overflow: hidden;
+  }
+
+  .v3_49 {
+    width: 28px;
+    height: 28px;
+    background: url("../images/v3_49.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 1468px;
+    left: 1033px;
+    overflow: hidden;
+  }
+
+  .v3_53 {
+    width: 248px;
+    height: 322px;
+    background: url("../images/v3_53.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 1824px;
+    left: 62px;
+    overflow: hidden;
+  }
+
+  .v3_54 {
+    width: 28px;
+    height: 28px;
+    background: url("../images/v3_54.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 1837px;
+    left: 448px;
+    overflow: hidden;
+  }
+
+  .v3_58 {
+    width: 248px;
+    height: 321px;
+    background: url("../images/v3_58.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 1824px;
+    left: 614px;
+    overflow: hidden;
+  }
+
+  .v3_59 {
+    width: 28px;
+    height: 28px;
+    background: url("../images/v3_59.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 1837px;
+    left: 970px;
+    overflow: hidden;
+  }
+
+  .v3_63 {
+    width: 248px;
+    height: 323px;
+    background: url("../images/v3_63.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 2194px;
+    left: 62px;
+    overflow: hidden;
+  }
+
+  .v3_64 {
+    width: 28px;
+    height: 28px;
+    background: url("../images/v3_64.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 2206px;
+    left: 418px;
+    overflow: hidden;
+  }
+
+  .v3_68 {
+    width: 248px;
+    height: 323px;
+    background: url("../images/v3_68.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 2194px;
+    left: 614px;
+    overflow: hidden;
+  }
+
+  .v3_69 {
+    width: 28px;
+    height: 28px;
+    background: url("../images/v3_69.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 2206px;
+    left: 1057px;
+    overflow: hidden;
+  }
+
+  .v3_73 {
+    width: 340px;
+    height: 36px;
+    background: rgba(66, 20, 95, 1);
+    opacity: 1;
+    position: absolute;
+    top: 2565px;
+    left: 430px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    overflow: hidden;
+  }
+
+  .v3_74 {
+    width: 338px;
+    height: 47px;
+    background: rgba(66, 20, 95, 1);
+    opacity: 1;
+    position: absolute;
+    top: 2560px;
+    left: 431px;
+    overflow: hidden;
+  }
+
+  .v3_75 {
+    width: 36px;
+    height: 36px;
+    background: url("../images/v3_75.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 748px;
+    left: 16px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    overflow: hidden;
+  }
+
+  .v3_76 {
+    width: 28px;
+    height: 28px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+    position: absolute;
+    top: 752px;
+    left: 22px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+  }
+
+  .v3_81 {
+    width: 178px;
+    color: rgba(0, 0, 0, 0.800000011920929);
+    position: absolute;
+    top: 15px;
+    left: 110px;
+    font-family: PT Sans;
+    font-weight: Regular;
+    font-size: 19px;
+    opacity: 1;
+    text-align: left;
+  }
+
+  .v3_82 {
+    width: 392px;
+    color: rgba(33, 33, 33, 1);
+    position: absolute;
+    top: 212px;
+    left: 404px;
+    font-family: PT Sans;
+    font-weight: Regular;
+    font-size: 33px;
+    opacity: 1;
+    text-align: center;
+  }
+
+  .v3_83 {
+    width: 388px;
+    color: rgba(33, 33, 33, 1);
+    position: absolute;
+    top: 280px;
+    left: 406px;
+    font-family: Merriweather;
+    font-weight: Regular;
+    font-size: 13px;
+    opacity: 1;
+    text-align: center;
+  }
+
+  .v3_84 {
+    width: 416px;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 549px;
+    left: 392px;
+    font-family: PT Sans;
+    font-weight: Regular;
+    font-size: 43px;
+    opacity: 1;
+    text-align: center;
+  }
+
+  .v3_85 {
+    width: 445px;
+    color: rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 669px;
+    left: 318px;
+    font-family: Roboto;
+    font-weight: Regular;
+    font-size: 16px;
+    opacity: 1;
+    text-align: left;
+  }
+
+  .v3_86 {
+    width: 346px;
+    color: rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 697px;
+    left: 318px;
+    font-family: Roboto;
+    font-weight: Regular;
+    font-size: 16px;
+    opacity: 1;
+    text-align: left;
+  }
+
+  .v3_87 {
+    width: 86px;
+    color: rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 725px;
+    left: 318px;
+    font-family: Roboto;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+
+  .v3_88 {
+    width: 229px;
+    color: rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 725px;
+    left: 404px;
+    font-family: Roboto;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+
+  .v3_89 {
+    width: 258px;
+    color: rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 753px;
+    left: 318px;
+    font-family: Roboto;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+
+  .v3_90 {
+    width: 271px;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 1342px;
+    left: 465px;
+    font-family: PT Sans;
+    font-weight: Regular;
+    font-size: 44px;
+    opacity: 1;
+    text-align: center;
+  }
+
+  .v3_91 {
+    width: 50px;
+    color: rgba(53, 16, 76, 1);
+    position: absolute;
+    top: 1468px;
+    left: 346px;
+    font-family: PT Sans;
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+  }
+
+  .v3_92 {
+    width: 218px;
+    color: rgba(53, 16, 76, 1);
+    position: absolute;
+    top: 1525px;
+    left: 346px;
+    font-family: Merriweather;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+
+  .v3_93 {
+    width: 121px;
+    color: rgba(53, 16, 76, 1);
+    position: absolute;
+    top: 1468px;
+    left: 898px;
+    font-family: PT Sans;
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+  }
+
+  .v3_94 {
+    width: 179px;
+    color: rgba(53, 16, 76, 1);
+    position: absolute;
+    top: 1525px;
+    left: 898px;
+    font-family: Merriweather;
+    font-weight: Regular;
+    font-size: 14px;
+    opacity: 1;
+    text-align: left;
+  }
+
+  .v3_95 {
+    width: 88px;
+    color: rgba(53, 16, 76, 1);
+    position: absolute;
+    top: 1837px;
+    left: 346px;
+    font-family: PT Sans;
+    font-weight: Regular;
+    font-size: 19px;
+    opacity: 1;
+    text-align: left;
+  }
+
+  .v3_96 {
+    width: 201px;
+    color: rgba(53, 16, 76, 1);
+    position: absolute;
+    top: 1894px;
+    left: 346px;
+    font-family: Merriweather;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+
+  .v3_97 {
+    width: 58px;
+    color: rgba(53, 16, 76, 1);
+    position: absolute;
+    top: 1837px;
+    left: 898px;
+    font-family: PT Sans;
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+  }
+
+  .v3_98 {
+    width: 230px;
+    color: rgba(53, 16, 76, 1);
+    position: absolute;
+    top: 1894px;
+    left: 898px;
+    font-family: Merriweather;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+
+  .v3_99 {
+    width: 58px;
+    color: rgba(53, 16, 76, 1);
+    position: absolute;
+    top: 2207px;
+    left: 346px;
+    font-family: PT Sans;
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+  }
+
+  .v3_100 {
+    width: 175px;
+    color: rgba(53, 16, 76, 1);
+    position: absolute;
+    top: 2264px;
+    left: 346px;
+    font-family: Merriweather;
+    font-weight: Regular;
+    font-size: 14px;
+    opacity: 1;
+    text-align: left;
+  }
+
+  .v3_101 {
+    width: 145px;
+    color: rgba(53, 16, 76, 1);
+    position: absolute;
+    top: 2207px;
+    left: 898px;
+    font-family: PT Sans;
+    font-weight: Regular;
+    font-size: 18px;
+    opacity: 1;
+    text-align: left;
+  }
+
+  .v3_102 {
+    width: 232px;
+    color: rgba(53, 16, 76, 1);
+    position: absolute;
+    top: 2264px;
+    left: 898px;
+    font-family: Merriweather;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+
+  .v3_103 {
+    width: 50px;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 2574px;
+    left: 575px;
+    font-family: Merriweather;
+    font-weight: Regular;
+    font-size: 14px;
+    opacity: 1;
+    text-align: center;
+  }
+
+  .v3_104 {
+    width: 76px;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 2657px;
+    left: 469px;
+    font-family: Merriweather;
+    font-weight: Regular;
+    font-size: 14px;
+    opacity: 1;
+    text-align: center;
+  }
+
+  .v3_105 {
+    width: 14px;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 2657px;
+    left: 548px;
+    font-family: Merriweather;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: center;
+  }
+
+  .v3_106 {
+    width: 172px;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 2657px;
+    left: 562px;
+    font-family: Merriweather;
+    font-weight: Regular;
+    font-size: 14px;
+    opacity: 1;
+    text-align: center;
+  }
+</style>
