@@ -1,7 +1,7 @@
 // Requiring modules
-const express = require('express');
-const app = express();
-const mssql = require("mysql");
+import express = require('express');
+import app = express();
+import mssql = require("mysql");
 
 // Get request
 app.get('/', function (req, res) {
