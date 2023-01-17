@@ -1,32 +1,41 @@
 // A function to determine the marker size based on the population
 function markerSize(dogs) {
+  if (dogs== null){return 0} 
   return Math.sqrt(dogs) * 6000;
 }
 
 function markerSize(cats) {
+  if (cats== null){return 0} 
   return Math.sqrt(cats) * 6000;
 }
 
 function markerSize(rabbits) {
+  if (rabbits== null){return 0} 
   return Math.sqrt(rabbits) * 6000;
 }
 
 function markerSize(birds) {
+  if (birds== null){return 0} 
   return Math.sqrt(birds) * 6000;
 }
 
 function markerSize(small_and_furry) {
+  if (small_and_furry== null){return 0} 
   return Math.sqrt(small_and_furry) * 6000;
 }
 
 function markerSize(total_pets) {
+  if (total_pets== null){return 0}
   return Math.sqrt(total_pets) * 6000;
 }
 
+function test(adoptable_by_state) {
+
+  console.log(adoptable_by_state)
 
 // An array that contains all the information needed to create city and state markers
 
-function myFunc(adoptable_by_state) {
+  d3.json(adoptable_by_state)  
 
   // Define arrays to hold the pet type markers.
   var dogMarkers = [];
@@ -39,8 +48,9 @@ function myFunc(adoptable_by_state) {
   // Loop through locations, and create the city and state markers.
   for (var i = 0; i < adoptable_by_state.length; i++) {
     // Setting the marker radius for the state by passing # of adoptable dogs into the markerSize function
+    if (adoptable_by_state[i].coordinates!= null){
     dogMarkers.push(
-      L.circle(adoptable_by_state[i].coordinates, {
+      L.circle(JSON.parse(adoptable_by_state[i].coordinates.replace(/'/g, '"')), {
         stroke: false,
         fillOpacity: 0.75,
         color: "white",
@@ -51,7 +61,7 @@ function myFunc(adoptable_by_state) {
 
     // Set the marker radius for the state by passing # of adoptable cats into the markerSize() function.
     catMarkers.push(
-      L.circle(adoptable_by_state[i].coordinates, {
+      L.circle(JSON.parse(adoptable_by_state[i].coordinates.replace(/'/g, '"')), {
         stroke: false,
         fillOpacity: 0.75,
         color: "blue",
@@ -62,50 +72,50 @@ function myFunc(adoptable_by_state) {
 
     // Set the marker radius for the state by passing  # of adoptable rabbits into the markerSize() function.
     rabbitMarkers.push(
-      L.circle(adoptable_by_state[i].coordinates, {
+      L.circle(JSON.parse(adoptable_by_state[i].coordinates.replace(/'/g, '"')), {
         stroke: false,
         fillOpacity: 0.75,
         color: "purple",
         fillColor: "purple",
-        radius: markerSize(locations[i].types.rabbits)
+        radius: markerSize(adoptable_by_state[i].types.rabbits)
       })
     );
 
     // Set the marker radius for the state by passing # of birds into the markerSize() function.
     birdMarkers.push(
-      L.circle(adoptable_by_state[i].coordinates, {
+      L.circle(JSON.parse(adoptable_by_state[i].coordinates.replace(/'/g, '"')), {
         stroke: false,
         fillOpacity: 0.75,
         color: "green",
         fillColor: "green",
-        radius: markerSize(locations[i].types.birds)
+        radius: markerSize(adoptable_by_state[i].types.birds)
       })
     );
 
     // Set the marker radius for the city by passing # of small_and_furry pets into the markerSize() function.
     smallfurryMarkers.push(
-      L.circle(adoptable_by_state[i].coordinates, {
+      L.circle(JSON.parse(adoptable_by_state[i].coordinates.replace(/'/g, '"')), {
         stroke: false,
         fillOpacity: 0.75,
         color: "pink",
         fillColor: "pink",
-        radius: markerSize(locations[i].types.small_and_furry)
+        radius: markerSize(adoptable_by_state[i].types.small_and_furry)
       })
     );
 
     // Set the marker radius for the state by passing # of total pets into the markerSize() function.
     totalpetMarkers.push(
-      L.circle(adoptable_by_state[i].coordinates, {
+      L.circle(JSON.parse(adoptable_by_state[i].coordinates.replace(/'/g, '"')), {
         stroke: false,
         fillOpacity: 0.75,
         color: "yellow",
         fillColor: "yellow",
-        radius: markerSize(locations[i].types.total_pets)
+        radius: markerSize(adoptable_by_state[i].types.total_pets)
       })
     );
 
 
-
+    }
   }
 
   // Create the base layers.
@@ -142,7 +152,7 @@ function myFunc(adoptable_by_state) {
   };
 
   // Define a map object.
-  var myMap = L.map("map", {
+  var myMap = L.map("myMap", {
     center: [37.09, -95.71],
     zoom: 5,
     layers: [street, doglayer, catlayer, rabbitlayer, birdlayer, smallfurrylayer, totalpetslayer]
@@ -153,8 +163,11 @@ function myFunc(adoptable_by_state) {
   L.control.layers(baseMaps, overlayMaps, {
     collapsed: false
   }).addTo(myMap);
+// var map =L.map('myMap').setView([51,0],13)
 
-
+  
 }
+
+
 
 
