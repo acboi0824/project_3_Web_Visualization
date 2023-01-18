@@ -50,6 +50,12 @@ def leaflet():
 
 
 ######################################################
+@app.route("/random")
+def randomizer():
+    return render_template('random.html')
+
+
+######################################################
 # create api route
 @app.route("/api/v1.0/adoptable_by_state")
 def adoptable_by_state():
