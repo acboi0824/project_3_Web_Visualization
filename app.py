@@ -32,21 +32,21 @@ app = Flask(__name__)
 ################################
 # Flask Routes
 # Define what to do when user hits the index route
-@app.route("/temp")
-def temp():
-    return render_template('home.html')
+@app.route("/")
+def home():
+    return render_template('index.html')
 
 
 ######################################################
 ################################
 # Flask Routes
-# web route nad get a webpage back that uses data from somewhere else (api route)
-@app.route("/")
-def home():
+# web route to get a webpage back that uses data from somewhere else (api route)
+@app.route("/map")
+def leaflet():
     
 
     # data = jsonify(query_list)
-    return render_template('leaflet.html')
+    return render_template('/leaflet.html')
 
 
 ######################################################

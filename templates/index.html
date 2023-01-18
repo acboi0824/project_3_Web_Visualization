@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Happy Tails: Visualize Petfinder</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+
+    /* navbar css */ 
+    .navbar {
+      margin-bottom: 0;
+      background-color: #42145f;
+      color: white;
+      border-radius: 0;
+    }
+    
+    /* height grid */
+    .row.content {height: 450px}
+    
+    /* side nav css */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* footer css */
+    footer {
+      background-color: #42145f;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* small screens css */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<!--navbar-->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <!--navbar links-->
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Happy Tails Homepage</a></li>
+        <!-- <li><a href="/count.html">Count</a></li>
+        <li><a href="/timetoadopt.html">Time to Adopt</a></li>
+        <li><a href="/histogram.html">Histogram</a></li>
+        <li><a href="/breeds.html">Breeds</a></li> -->
+        <li><a href='/map' target='_blank'>Adoptable Pets</a></li>
+        <!-- <li><a href="/feelinglucky.html">Feeling Lucky</a></li> -->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+    <!--navbar logo-->
+        <li><img src = "meowornever.png" /></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--section break-->
+<hr>
+<img src="bg.png" />
+
+  <!--Description and Github Links-->
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <p><a href="https://docs.google.com/document/d/1cqK2-5z_WNKQzBi8Rv3xXX4xPQKxnXYiYxWfepC-7cQ/edit?usp=sharing">Project Description</a></p>
+      <p><a href="https://github.com/acboi0824/project_3_Web_Visualization">Github</a></p>
+    </div>
+    <!--paragraph section 1-->
+    <div class="col-sm-8 text-left">
+      <h1>Mission of the Project</h1>
+      <ol>
+        <li>Access the Petfinder API and store relevant data in a database</li>
+        <li>Pull in only data that we need in the ETL process</li>
+        <li>Interactive visualizations of the relevant data</li>
+        <li>Petfinder "I'm feeling lucky feature" 🎲</li>
+      </ol>
+    <!--project description iframe-->
+      <iframe src="https://docs.google.com/document/d/e/2PACX-1vQrvZoLjWq4PuSPvO89er7Pox59A1pno4hWkFnsvf2SUKqG0MbOxbinjccFJD4daPk22HnoHd0hNNo-/pub?embedded=true" width="650" height ="450"></iframe> 
+      
+    <!--Visualization descriptions-->
+    <hr>
+    <h1>Visualizations</h1>
+      <li class="active"><a href="#">Happy Tails Homepage</a></li>
+        <!-- <li><h3><a href="count.html">Count</a></h3><p>shows the number of adoptable and adopted pets by region</p></li>
+        <li><h3><a href="timetoadopt.html">Time to Adopt</a></h3><p>shows the velocity of pets by region</p></li>
+        <li><h3><a href="histogram.html">Histogram</a></h3><p>shows age of adoptable and adopted pets by region</p></li>
+        <li><h3><a href="breeds.html">Breeds</a></h3><p>shows adoptable and adopted breeds by region</p></li> -->
+        <li><h3><a href='/map' target='_blank'>Adoptable Pets</a></h3><p>shows adoptable and adopted breeds by region</p></li>
+        <!-- <li><h3><a href="feelinglucky.html">Feeling Lucky 🎲</a></h3><p>Input your current region to get a pet adoption suggestion</p></li> -->
+    </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>made with ❤️ by team Happy Tails</p>
+</footer>
+
+</body>
+</html>
